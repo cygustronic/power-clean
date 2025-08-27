@@ -78,6 +78,40 @@
     /* Footer */
     footer{background:#000;color:#fff;padding:28px 0}
 
+    /* Estilos del botón flotante */
+.floating-button {
+  position: fixed; /* Fija la posición en la pantalla */
+  bottom: 20px; /* Distancia desde la parte inferior */
+  right: 20px; /* Distancia desde la parte derecha */
+  width: 70px;
+  height: 70px;
+  background-color: rgb(17, 171, 29); /* Color de fondo del botón */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para darle efecto de elevación */
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Icono dentro del botón */
+.floating-button i {
+  font-size: 50px;
+  color: #fff; /* Color del icono */
+  width: 100%;
+}
+
+/* Efecto hover para mayor elevación */
+.floating-button:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
+}
+
+/* Efecto activo cuando se hace clic */
+.floating-button:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Disminuye la sombra al presionar */
+}
+
     /* Responsive */
     @media (max-width: 1024px){
       .hero .grid{grid-template-columns:1fr}
@@ -90,6 +124,3 @@
       .hero .grid{gap:24px}
     }
 
-    /* Botón WhatsApp flotante */
-    .wa-float{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;border-radius:999px;padding:14px 18px;font-weight:800;display:flex;gap:.6rem;align-items:center;box-shadow:0 10px 30px rgba(0,0,0,.25);z-index:60}
-    .wa-float svg{width:20px;height:20px}

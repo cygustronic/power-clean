@@ -10,3 +10,8 @@
       const url = `https://wa.me/573004957727?text=${encodeURIComponent(msg)}`;
       window.open(url,'_blank');
     });
+
+      document.getElementById('floatingBtn').addEventListener('click', function() {
+    window.open('https://wa.me/573004957727?text=Hola%20PowerClean%2C%20necesito%20una%20limpieza%20a%20domicilio.', '_blank');
+    
+}); 
